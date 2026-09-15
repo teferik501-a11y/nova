@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA Creative | Digital Marketing & Creative Agency</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap');
+        body {
+            font-family: 'Plus Jakarta+Sans', sans-serif;
+            background-color: #0b0b0b;
+            color: #f3f4f6;
+        }
+    </style>
+</head>
+<body class="selection:bg-amber-500 selection:text-black min-h-screen">
+
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-6">
+        <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-amber-500 rounded-lg flex items-center justify-center font-black text-black text-xl tracking-tighter">
+                    N
+                </div>
+                <span class="font-bold text-xl tracking-wider text-white">NOVA<span class="text-amber-500">CREATIVE</span></span>
+            </div>
+
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
+                <a href="#home" class="hover:text-amber-400 transition-colors">Home</a>
+                <a href="#services" class="hover:text-amber-400 transition-colors">Services</a>
+                <a href="#work" class="hover:text-amber-400 transition-colors">Work</a>
+                <a href="#pricing" class="hover:text-amber-400 transition-colors">Pricing</a>
+                <a href="#contact" class="hover:text-amber-400 transition-colors">Contact</a>
+            </div>
+
+            <div class="hidden md:block">
+                <a href="#contact" class="px-5 py-2.5 rounded-full bg-amber-500 text-black font-semibold text-sm hover:bg-amber-400 transition-all transform hover:scale-105">
+                    Get Started
+                </a>
+            </div>
+
+            <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- Mobile menu dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 right-0 bg-[#121212] border-b border-white/10 px-6 py-6 flex flex-col gap-4 shadow-2xl">
+            <a href="#home" class="mobile-link text-lg font-medium">Home</a>
+            <a href="#services" class="mobile-link text-lg font-medium">Services</a>
+            <a href="#work" class="mobile-link text-lg font-medium">Work</a>
+            <a href="#pricing" class="mobile-link text-lg font-medium">Pricing</a>
+            <a href="#contact" class="mobile-link text-lg font-medium">Contact</a>
+        </div>
+    </nav>
+
+    <section id="home" class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#f59e0b_1px,transparent_1px)] [background-size:32px_32px] pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-6 py-20 text-center relative z-10">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-semibold uppercase tracking-widest mb-6">
+                <i data-lucide="sparkles" class="w-3.5 h-3.5"></i> Digital Marketing & Creative Agency
+            </div>
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight mb-8">
+                We turn brands <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-500 to-orange-500">
+                    into icons. ⚡
+                </span>
+            </h1>
+            <p class="max-w-2xl mx-auto text-lg md:text-xl text-gray-400 mb-4">
+                Content • Branding • Marketing. Turning attention into growth.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full bg-amber-500 text-black font-bold hover:bg-amber-400 transition-all shadow-lg shadow-amber-500/25 flex items-center justify-center gap-2">
+                    Let's Talk <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+                <a href="#pricing" class="w-full sm:w-auto px-8 py-4 rounded-full bg-white/5 border border-white/10 text-white font-semibold hover:bg-white/10 transition-all flex items-center justify-center gap-2">
+                    Explore Pricing
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-28 bg-[#111] relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-xl mx-auto mb-20">
+                <h2 class="text-xs uppercase tracking-widest text-amber-500 font-bold mb-3">Our Expertise</h2>
+                <h3 class="text-3xl md:text-5xl font-black">Tailored Digital Solutions</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-[#18181b] border border-white/5 p-8 rounded-2xl hover:border-amber-500/50 transition-all group">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-500 mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="megaphone" class="w-7 h-7"></i>
+                    </div>
+                    <span class="text-xs font-mono text-amber-500/80 mb-2 block">01</span>
+                    <h4 class="text-xl font-bold mb-3">Digital Marketing</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Social media management, high-performance ad campaigns, targeted strategy, and sustainable digital growth.
+                    </p>
+                    <a href="#pricing" onclick="switchTab('marketing')" class="inline-flex items-center gap-2 text-sm font-semibold text-amber-400 group-hover:translate-x-1 transition-transform">
+                        View Marketing Plans <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <div class="bg-[#18181b] border border-white/5 p-8 rounded-2xl hover:border-amber-500/50 transition-all group">
+                    <div class="w-14 h-14 rounded-xl bg-orange-500/10 flex items-center justify-center text-orange-500 mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="palette" class="w-7 h-7"></i>
+                    </div>
+                    <span class="text-xs font-mono text-orange-500/80 mb-2 block">02</span>
+                    <h4 class="text-xl font-bold mb-3">Brand & Design</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Complete brand identities, custom logo design packages, impactful visual systems, and unforgettable creative campaigns.
+                    </p>
+                    <a href="#pricing" onclick="switchTab('branding')" class="inline-flex items-center gap-2 text-sm font-semibold text-orange-400 group-hover:translate-x-1 transition-transform">
+                        View Logo Packages <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <div class="bg-[#18181b] border border-white/5 p-8 rounded-2xl hover:border-amber-500/50 transition-all group">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-500 mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="code" class="w-7 h-7"></i>
+                    </div>
+                    <span class="text-xs font-mono text-amber-500/80 mb-2 block">03</span>
+                    <h4 class="text-xl font-bold mb-3">Web & Digital</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Stunning websites, high-conversion landing pages, responsive design, and tailored digital experiences that convert visitors.
+                    </p>
+                    <a href="#pricing" onclick="switchTab('web')" class="inline-flex items-center gap-2 text-sm font-semibold text-amber-400 group-hover:translate-x-1 transition-transform">
+                        View Web Pricing <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="py-28 bg-[#0b0b0b]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-20">
+                <div>
+                    <h2 class="text-xs uppercase tracking-widest text-amber-500 font-bold mb-3">Case Studies</h2>
+                    <h3 class="text-3xl md:text-5xl font-black">Featured Work</h3>
+                </div>
+                <p class="text-gray-400 max-w-md mt-4 md:mt-0 text-sm">
+                    Discover how we've partnered with ambitious brands to transform their digital presence and achieve massive growth.
+                </p>
+            </div>
+
+            <div class="space-y-24 md:space-y-36">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <div class="lg:col-span-7 overflow-hidden rounded-2xl bg-neutral-900 border border-white/10 group">
+                        <img 
+                            src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop" 
+                            alt="Aura Skincare" 
+                            class="w-full h-[400px] md:h-[500px] object-cover group-hover:scale-105 transition-transform duration-700 opacity-90"
+                        >
+                    </div>
+                    <div class="lg:col-span-5 space-y-6">
+                        <div class="inline-block px-3 py-1 rounded-md bg-amber-500/10 text-amber-400 text-xs font-mono">Brand Identity & E-commerce</div>
+                        <h4 class="text-3xl font-black">Aura Skincare</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            A complete brand overhaul and custom Shopify experience for a premium organic skincare line, resulting in a 200% increase in online sales and unmatched customer engagement.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <div class="lg:col-span-5 space-y-6 lg:order-1 order-2">
+                        <div class="inline-block px-3 py-1 rounded-md bg-orange-500/10 text-orange-400 text-xs font-mono">Digital Campaign & Social</div>
+                        <h4 class="text-3xl font-black">Urban Athletics</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            High-impact social media campaigns and dynamic visual content created to launch a new summer athletic collection across multiple platforms with precision targeting.
+                        </p>
+                    </div>
+                    <div class="lg:col-span-7 overflow-hidden rounded-2xl bg-neutral-900 border border-white/10 group lg:order-2 order-1">
+                        <img 
+                            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2670&auto=format&fit=crop" 
+                            alt="Urban Athletics" 
+                            class="w-full h-[400px] md:h-[500px] object-cover group-hover:scale-105 transition-transform duration-700 opacity-90"
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-28 bg-[#121212] relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs uppercase tracking-widest text-amber-500 font-bold mb-3 block">Flexible Packages</span>
+                <h2 class="text-3xl md:text-5xl font-black mb-4">Transparent Pricing Options</h2>
+                <p class="text-gray-400 text-sm">Choose the exact plan to grow your brand, attract customers, and achieve your goals.</p>
+
+                <!-- Pricing Tab Switcher -->
+                <div class="flex flex-wrap justify-center gap-3 mt-8 bg-[#18181b] p-1.5 rounded-full border border-white/10 max-w-md mx-auto">
+                    <button onclick="switchTab('marketing')" id="tab-marketing" class="flex-1 py-2.5 px-4 rounded-full text-xs font-bold transition-all bg-amber-500 text-black shadow-md">
+                        Digital Marketing
+                    </button>
+                    <button onclick="switchTab('branding')" id="tab-branding" class="flex-1 py-2.5 px-4 rounded-full text-xs font-bold transition-all text-gray-400 hover:text-white">
+                        Logo Design
+                    </button>
+                    <button onclick="switchTab('web')" id="tab-web" class="flex-1 py-2.5 px-4 rounded-full text-xs font-bold transition-all text-gray-400 hover:text-white">
+                        Web Design
+                    </button>
+                </div>
+            </div>
+
+            <!-- TAB CONTENTS -->
+            <div id="pricing-content">
+                <!-- Injected dynamically via JS -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-28 bg-[#0b0b0b]">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <span class="text-xs uppercase tracking-widest text-amber-500 font-bold mb-3 block">Get In Touch</span>
+            <h2 class="text-3xl md:text-5xl font-black mb-4">Let's Build Something Amazing</h2>
+            <p class="text-gray-400 text-sm mb-12">Reach out to us directly to discuss your project, package selections, or custom solutions.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <!-- Phone numbers card -->
+                <div class="bg-[#121212] p-8 rounded-3xl border border-white/10 flex flex-col items-center justify-between space-y-4">
+                    <div class="w-14 h-14 bg-amber-500/10 rounded-2xl flex items-center justify-center text-amber-500">
+                        <i data-lucide="phone" class="w-7 h-7"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-white">Call Us</h3>
+                    <div class="space-y-2 w-full">
+                        <a href="tel:0934106192" class="block text-amber-400 hover:underline font-mono text-sm font-bold">0934 10 61 92</a>
+                        <a href="tel:0901927173" class="block text-amber-400 hover:underline font-mono text-sm font-bold">0901 92 71 73</a>
+                    </div>
+                </div>
+
+                <!-- TikTok Card -->
+                <div class="bg-[#121212] p-8 rounded-3xl border border-white/10 flex flex-col items-center justify-between space-y-4">
+                    <div class="w-14 h-14 bg-amber-500/10 rounded-2xl flex items-center justify-center text-amber-500">
+                        <i data-lucide="video" class="w-7 h-7"></i>
+                    </div>
+                    <div class="space-y-1">
+                        <h3 class="font-bold text-lg text-white">TikTok</h3>
+                        <p class="text-xs text-gray-400">Watch & Follow</p>
+                    </div>
+                    <div class="w-full space-y-1">
+                        <a href="https://tiktok.com/@nova.creative17" target="_blank" rel="noreferrer" class="block text-amber-400 hover:underline font-mono text-sm font-bold">@nova.creative17</a>
+                    </div>
+                </div>
+
+                <!-- Instagram Card -->
+                <div class="bg-[#121212] p-8 rounded-3xl border border-white/10 flex flex-col items-center justify-between space-y-4">
+                    <div class="w-14 h-14 bg-amber-500/10 rounded-2xl flex items-center justify-center text-amber-500">
+                        <i data-lucide="instagram" class="w-7 h-7"></i>
+                    </div>
+                    <div class="space-y-1">
+                        <h3 class="font-bold text-lg text-white">Instagram</h3>
+                        <p class="text-xs text-gray-400">Socials & DM</p>
+                    </div>
+                    <div class="w-full space-y-1">
+                        <a href="https://instagram.com/nova.creative17" target="_blank" rel="noreferrer" class="block text-amber-400 hover:underline font-mono text-sm font-bold">@nova.creative17</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 bg-[#080808] border-t border-white/10 text-gray-500 text-xs">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-2">
+                <div class="w-6 h-6 bg-amber-500 rounded flex items-center justify-center font-black text-black text-xs">
+                    N
+                </div>
+                <span class="font-bold text-white tracking-wider">NOVA<span class="text-amber-500">CREATIVE</span></span>
+            </div>
+            <p id="footer-year">© 2026 NOVA Creative Agency. All rights reserved.</p>
+            <div class="flex gap-6">
+                <span class="text-gray-400">Content • Branding • Marketing</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Update copyright year
+        document.getElementById('footer-year').textContent = `© ${new Date().getFullYear()} NOVA Creative Agency. All rights reserved.`;
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-[#0b0b0b]/90', 'backdrop-blur-md', 'py-4', 'border-b', 'border-white/10');
+                nav.classList.remove('py-6');
+            } else {
+                nav.classList.remove('bg-[#0b0b0b]/90', 'backdrop-blur-md', 'py-4', 'border-b', 'border-white/10');
+                nav.classList.add('py-6');
+            }
+        });
+
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Pricing data sets
+        const pricingData = {
+            marketing: `
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-[#fcfcfc] text-gray-900 rounded-3xl p-8 flex flex-col justify-between shadow-xl relative">
+                        <div>
+                            <div class="text-center pb-6 border-b border-gray-200">
+                                <h3 class="font-bold text-xl tracking-tight text-black">NOVA <span class="text-amber-600">START</span></h3>
+                                <p class="text-xs text-gray-500 mt-1">Starter Plan</p>
+                                <div class="mt-4">
+                                    <span class="text-4xl font-black text-black">10,000</span>
+                                    <span class="text-sm font-bold text-gray-600 ml-1">ETB</span>
+                                    <p class="text-xs text-gray-500 mt-0.5">/Month</p>
+                                </div>
+                            </div>
+                            <ul class="space-y-4 my-8 text-sm">
+                                ${['Facebook + Instagram', '8 Posts / Month', 'Basic Captions', 'Basic Content Strategy', 'Monthly Report', 'Page Management'].map(f => `
+                                    <li class="flex items-start gap-3">
+                                        <div class="w-5 h-5 rounded-full bg-amber-500 flex items-center justify-center shrink-0 text-black mt-0.5">✓</div>
+                                        <span class="text-gray-700 font-medium">${f}</span>
+                                    </li>
+                                `).join('')}
+                            </ul>
+                        </div>
+                        <a href="#contact" class="w-full py-3.5 rounded-full bg-amber-500 hover:bg-amber-400 text-black font-bold text-center block transition-transform hover:scale-[1.02]">Get Started</a>
+                    </div>
+
+                    <div class="bg-[#1a1a1a] text-white rounded-3xl p-8 flex flex-col justify-between shadow-2xl relative border-2 border-amber-500">
+                        <div class="absolute -top-4 right-8 bg-amber-500 text-black text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded-full shadow-md">Most Popular</div>
+                        <div>
+                            <div class="text-center pb-6 border-b border-white/10">
+                                <h3 class="font-bold text-xl tracking-tight text-white">NOVA <span class="text-amber-500">GROW</span></h3>
+                                <p class="text-xs text-gray-400 mt-1">Professional Plan</p>
+                                <div class="mt-4">
+                                    <span class="text-4xl font-black text-amber-400">15,000</span>
+                                    <span class="text-sm font-bold text-gray-300 ml-1">ETB</span>
+                                    <p class="text-xs text-gray-400 mt-0.5">/Month</p>
+                                </div>
+                            </div>
+                            <ul class="space-y-4 my-8 text-sm">
+                                ${['Facebook + Instagram + TikTok', '12 – 16 Posts / Month', 'Reels / Short-Form Content', 'Content Strategy', 'Community Management', 'Monthly Analytics / Report', 'Lead-Generation Strategy'].map(f => `
+                                    <li class="flex items-start gap-3">
+                                        <div class="w-5 h-5 rounded-full bg-amber-500 flex items-center justify-center shrink-0 text-black mt-0.5">✓</div>
+                                        <span class="text-gray-200 font-medium">${f}</span>
+                                    </li>
+                                `).join('')}
+                            </ul>
+                        </div>
+                        <a href="#contact" class="w-full py-3.5 rounded-full bg-amber-500 hover:bg-amber-400 text-black font-bold text-center block transition-transform hover:scale-[1.02]">Get Started</a>
+                    </div>
+
+                    <div class="bg-[#fcfcfc] text-gray-900 rounded-3xl p-8 flex flex-col justify-between shadow-xl relative">
+                        <div>
+                            <div class="text-center pb-6 border-b border-gray-200">
+                                <h3 class="font-bold text-xl tracking-tight text-black">NOVA <span class="text-amber-600">SCALE</span></h3>
+                                <p class="text-xs text-gray-500 mt-1">Premium Plan</p>
+                                <div class="mt-4">
+                                    <span class="text-4xl font-black text-black">25,000+</span>
+                                    <span class="text-sm font-bold text-gray-600 ml-1">ETB</span>
+                                    <p class="text-xs text-gray-500 mt-0.5">/Month</p>
+                                </div>
+                            </div>
+                            <ul class="space-y-4 my-8 text-sm">
+                                ${['Full Social Media Management', '20+ Content Pieces / Month', 'Reels / Video Strategy', 'Paid Advertising Management', 'Lead Generation', 'Monthly Strategy Meeting', 'Detailed Analytics / Report', 'Conversion Optimization'].map(f => `
+                                    <li class="flex items-start gap-3">
+                                        <div class="w-5 h-5 rounded-full bg-amber-500 flex items-center justify-center shrink-0 text-black mt-0.5">✓</div>
+                                        <span class="text-gray-700 font-medium">${f}</span>
+                                    </li>
+                                `).join('')}
+                            </ul>
+                        </div>
+                        <a href="#contact" class="w-full py-3.5 rounded-full bg-amber-500 hover:bg-amber-400 text-black font-bold text-center block transition-transform hover:scale-[1.02]">Get Started</a>
+                    </div>
+                </div>
+            `,
+            branding: `
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-[#fcfcfc] text-gray-900 rounded-3xl overflow-hidden flex flex-col justify-between shadow-xl">
+                        <div>
+                            <div class="bg-orange-600 text-white p-6 text-center">
+                                <h3 class="font-bold text-lg">STARTER PLAN</h3>
+                                <div class="mt-2">
+                                    <span class="text-4xl font-black">3,000</span>
+                                    <span class="text-sm font-bold ml-1">ETB</span>
+                                </div>
+                            </div>
+                            <ul class="p-8 space-y-4 text-sm">
+                                ${['1 Logo Concept', '2 Revisions', 'PNG / JPG', 'Basic Color Selection'].map(f => `
+                                    <li class="flex items-center gap-3">
+                                        <div class="w-2 h-2 rounded-full bg-orange-600 shrink-0"></div>
+                                        <span class="text-gray-700 font-medium">${f}</span>
+                                    </li>
+                                `).join('')}
+                            </ul>
+                        </div>
+                        <div class="p-8 pt-0">
+                            <a href="#contact" class="w-full py-3.5 rounded-full bg-orange-600 hover:bg-orange-500 text-white font-bold text-center block transition-transform hover:scale-[1.02]">Get Started</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#1a1a1a] text-white rounded-3xl overflow-hidden flex flex-col justify-between shadow-2xl border-2 border-orange-500 relative">
+                        <div class="absolute top-4 right-4 bg-orange-600 text-white text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded-full shadow-md">Best Value</div>
+                        <div>
+                            <div class="bg-orange-500 text-black p-6 text-center font-bold">
+                                <h3 class="text-lg">PROFESSIONAL PLAN</h3>
+                                <div class="mt-2">
+                                    <span class="text-4xl font-black text-black">6,000</span>
+                                    <span class="text-sm font-bold ml-1 text-black">ETB</span>
+                                </div>
+                            </div>
+                            <ul class="p-8 space-y-4 text-sm">
+                                ${['2–3 Concepts', '3 Revisions', 'Logo Variations', 'Color Palette', 'Typography', 'PNG / JPG / SVG / PDF', 'Black & White Versions'].map(f => `
+                                    <li class="flex items-center gap-3">
+                                        <div class="w-2 h-2 rounded-full bg-orange-500 shrink-0"></div>
+                                        <span class="text-gray-200 font-medium">${f}</span>
+                                    </li>
+                                `).join('')}
+                            </ul>
+                        </div>
+                        <div class="p-8 pt-0">
+                            <a href="#contact" class="w-full py-3.5 rounded-full bg-orange-500 hover:bg-orange-400 text-black font-bold text-center block transition-transform hover:scale-[1.02]">Get Started</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#fcfcfc] text-gray-900 rounded-3xl overflow-hidden flex flex-col justify-between shadow-xl">
+                        <div>
+                            <div class="bg-orange-600 text-white p-6 text-center">
+                                <h3 class="font-bold text-lg">ENTERPRISE PLAN</h3>
+                                <div class="mt-2">
+                                    <span class="text-4xl font-black">10,000+</span>
+                                    <span class="text-sm font-bold ml-1">ETB</span>
+                                </div>
+                            </div>
+                            <ul class="p-8 space-y-4 text-sm">
+                                ${['Full Logo Development', 'Multiple Concepts', 'Unlimited Revisions', 'Complete Logo System', 'Brand Guidelines', 'All Major File Formats'].map(f => `
+                                    <li class="flex items-center gap-3">
+                                        <div class="w-2 h-2 rounded-full bg-orange-600 shrink-0"></div>
+                                        <span class="text-gray-700 font-medium">${f}</span>
+                                    </li>
+                                `).join('')}
+                            </ul>
+                        </div>
+                        <div class="p-8 pt-0">
+                            <a href="#contact" class="w-full py-3.5 rounded-full bg-orange-600 hover:bg-orange-500 text-white font-bold text-center block transition-transform hover:scale-[1.02]">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            `,
+            web: `
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-[#fcfcfc] text-gray-900 rounded-3xl p-8 flex flex-col justify-between shadow-xl">
+                        <div>
+                            <div class="pb-6 border-b border-gray-200">
+                                <h3 class="font-bold text-xl text-black">STARTER</h3>
+                                <p class="text-xs text-gray-500 mt-1">Perfect for small businesses getting started.</p>
+                                <div class="mt-4">
+                                    <span class="text-xs font-semibold text-gray-500">ETB</span>
+                                    <div class="text-4xl font-black text-black">12,000</div>
+                                </div>
+                            </div>
+                            <ul class="space-y-4 my-8 text-sm">
+                                ${['Up to 4 pages', 'Responsive design', 'Contact form', 'Basic SEO setup', 'Mobile optimization'].map(f => `
+                                    <li class="flex items-start gap-3">
+                                        <div class="w-5 h-5 rounded-full bg-amber-500 flex items-center justify-center shrink-0 text-black mt-0.5">✓</div>
+                                        <span class="text-gray-700 font-medium">${f}</span>
+                                    </li>
+                                `).join('')}
+                            </ul>
+                        </div>
+                        <a href="#contact" class="w-full py-3.5 rounded-full bg-amber-500 hover:bg-amber-400 text-black font-bold text-center block transition-transform hover:scale-[1.02]">Get Started</a>
+                    </div>
+
+                    <div class="bg-[#1a1a1a] text-white rounded-3xl p-8 flex flex-col justify-between shadow-2xl border-2 border-amber-500 relative">
+                        <div>
+                            <div class="pb-6 border-b border-white/10">
+                                <h3 class="font-bold text-xl text-white">PRO</h3>
+                                <p class="text-xs text-gray-400 mt-1">Everything you need to grow and stand out.</p>
+                                <div class="mt-4">
+                                    <span class="text-xs font-semibold text-amber-400">ETB</span>
+                                    <div class="text-4xl font-black text-amber-400">25,000</div>
+                                </div>
+                            </div>
+                            <ul class="space-y-4 my-8 text-sm">
+                                ${['Up to 7 pages', 'Professional UI/UX', 'Responsive design', 'Contact/WhatsApp integration', 'Basic SEO', 'Speed optimization', 'Google Maps & social integration'].map(f => `
+                                    <li class="flex items-start gap-3">
+                                        <div class="w-5 h-5 rounded-full bg-amber-500 flex items-center justify-center shrink-0 text-black mt-0.5">✓</div>
+                                        <span class="text-gray-200 font-medium">${f}</span>
+                                    </li>
+                                `).join('')}
+                            </ul>
+                        </div>
+                        <a href="#contact" class="w-full py-3.5 rounded-full bg-amber-500 hover:bg-amber-400 text-black font-bold text-center block transition-transform hover:scale-[1.02]">Upgrade Now</a>
+                    </div>
+
+                    <div class="bg-[#fcfcfc] text-gray-900 rounded-3xl p-8 flex flex-col justify-between shadow-xl">
+                        <div>
+                            <div class="pb-6 border-b border-gray-200">
+                                <h3 class="font-bold text-xl text-black">PREMIUM</h3>
+                                <p class="text-xs text-gray-500 mt-1">Advanced solutions for serious business and growth.</p>
+                                <div class="mt-4">
+                                    <span class="text-xs font-semibold text-gray-500">ETB</span>
+                                    <div class="text-4xl font-black text-black">40,000+</div>
+                                </div>
+                            </div>
+                            <ul class="space-y-4 my-8 text-sm">
+                                ${['8+ pages', 'Advanced UI/UX', 'Custom functionality', 'SEO structure', 'Analytics', 'Forms/integrations', 'Professional launch support'].map(f => `
+                                    <li class="flex items-start gap-3">
+                                        <div class="w-5 h-5 rounded-full bg-amber-500 flex items-center justify-center shrink-0 text-black mt-0.5">✓</div>
+                                        <span class="text-gray-700 font-medium">${f}</span>
+                                    </li>
+                                `).join('')}
+                            </ul>
+                        </div>
+                        <a href="#contact" class="w-full py-3.5 rounded-full bg-amber-500 hover:bg-amber-400 text-black font-bold text-center block transition-transform hover:scale-[1.02]">Contact Us</a>
+                    </div>
+                </div>
+            `
+        };
+
+        function switchTab(tab) {
+            const content = document.getElementById('pricing-content');
+            content.innerHTML = pricingData[tab];
+
+            // Update tab styles
+            ['marketing', 'branding', 'web'].forEach(t => {
+                const btn = document.getElementById(`tab-${t}`);
+                if (t === tab) {
+                    btn.className = `flex-1 py-2.5 px-4 rounded-full text-xs font-bold transition-all shadow-md ${t === 'branding' ? 'bg-orange-500 text-white' : 'bg-amber-500 text-black'}`;
+                } else {
+                    btn.className = `flex-1 py-2.5 px-4 rounded-full text-xs font-bold transition-all text-gray-400 hover:text-white`;
+                }
+            });
+        }
+
+        // Initialize default tab
+        switchTab('marketing');
+
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
